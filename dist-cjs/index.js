@@ -1,8 +1,8 @@
-"use strict";
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -20,275 +20,130 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  AbortController: () => import_types.AbortController,
-  AbortHandler: () => import_types.AbortHandler,
-  AbortSignal: () => import_types.AbortSignal,
-  AbsoluteLocation: () => import_types.AbsoluteLocation,
-  AuthScheme: () => import_types.AuthScheme,
-  AvailableMessage: () => import_types.AvailableMessage,
-  AvailableMessages: () => import_types.AvailableMessages,
-  AwsCredentialIdentity: () => import_types.AwsCredentialIdentity,
-  AwsCredentialIdentityProvider: () => import_types.AwsCredentialIdentityProvider,
-  BinaryHeaderValue: () => import_types.BinaryHeaderValue,
-  BlobTypes: () => import_types.BlobTypes,
-  BodyLengthCalculator: () => import_types.BodyLengthCalculator,
-  BooleanHeaderValue: () => import_types.BooleanHeaderValue,
-  BuildHandler: () => import_types.BuildHandler,
-  BuildHandlerArguments: () => import_types.BuildHandlerArguments,
-  BuildHandlerOptions: () => import_types.BuildHandlerOptions,
-  BuildHandlerOutput: () => import_types.BuildHandlerOutput,
-  BuildMiddleware: () => import_types.BuildMiddleware,
-  ByteHeaderValue: () => import_types.ByteHeaderValue,
-  Checksum: () => import_types.Checksum,
-  ChecksumConstructor: () => import_types.ChecksumConstructor,
-  Client: () => import_types.Client,
-  Command: () => import_types.Command,
-  ConnectConfiguration: () => import_types.ConnectConfiguration,
-  ConnectionManager: () => import_types.ConnectionManager,
-  ConnectionManagerConfiguration: () => import_types.ConnectionManagerConfiguration,
-  ConnectionPool: () => import_types.ConnectionPool,
-  DateInput: () => import_types.DateInput,
-  Decoder: () => import_types.Decoder,
-  DeserializeHandler: () => import_types.DeserializeHandler,
-  DeserializeHandlerArguments: () => import_types.DeserializeHandlerArguments,
-  DeserializeHandlerOptions: () => import_types.DeserializeHandlerOptions,
-  DeserializeHandlerOutput: () => import_types.DeserializeHandlerOutput,
-  DeserializeMiddleware: () => import_types.DeserializeMiddleware,
-  DocumentType: () => import_types.DocumentType,
-  Encoder: () => import_types.Encoder,
-  Endpoint: () => import_types.Endpoint,
-  EndpointARN: () => import_types.EndpointARN,
-  EndpointBearer: () => import_types.EndpointBearer,
-  EndpointObjectProperty: () => import_types.EndpointObjectProperty,
-  EndpointParameters: () => import_types.EndpointParameters,
-  EndpointPartition: () => import_types.EndpointPartition,
-  EndpointURL: () => import_types.EndpointURL,
-  EndpointURLScheme: () => import_types.EndpointURLScheme,
-  EndpointV2: () => import_types.EndpointV2,
-  EventSigner: () => import_types.EventSigner,
-  EventSigningArguments: () => import_types.EventSigningArguments,
-  EventStreamMarshaller: () => import_types.EventStreamMarshaller,
-  EventStreamMarshallerDeserFn: () => import_types.EventStreamMarshallerDeserFn,
-  EventStreamMarshallerSerFn: () => import_types.EventStreamMarshallerSerFn,
-  EventStreamPayloadHandler: () => import_types.EventStreamPayloadHandler,
-  EventStreamPayloadHandlerProvider: () => import_types.EventStreamPayloadHandlerProvider,
-  EventStreamRequestSigner: () => import_types.EventStreamRequestSigner,
-  EventStreamSerdeContext: () => import_types.EventStreamSerdeContext,
-  EventStreamSerdeProvider: () => import_types.EventStreamSerdeProvider,
-  EventStreamSignerProvider: () => import_types.EventStreamSignerProvider,
-  ExponentialBackoffJitterType: () => import_types.ExponentialBackoffJitterType,
-  ExponentialBackoffStrategyOptions: () => import_types.ExponentialBackoffStrategyOptions,
-  FinalizeHandler: () => import_types.FinalizeHandler,
-  FinalizeHandlerArguments: () => import_types.FinalizeHandlerArguments,
-  FinalizeHandlerOutput: () => import_types.FinalizeHandlerOutput,
-  FinalizeRequestHandlerOptions: () => import_types.FinalizeRequestHandlerOptions,
-  FinalizeRequestMiddleware: () => import_types.FinalizeRequestMiddleware,
-  FormattedEvent: () => import_types.FormattedEvent,
-  GetAwsChunkedEncodingStream: () => import_types.GetAwsChunkedEncodingStream,
-  GetAwsChunkedEncodingStreamOptions: () => import_types.GetAwsChunkedEncodingStreamOptions,
-  Handler: () => import_types.Handler,
-  HandlerExecutionContext: () => import_types.HandlerExecutionContext,
-  HandlerOptions: () => import_types.HandlerOptions,
-  Hash: () => import_types.Hash,
-  HashConstructor: () => import_types.HashConstructor,
-  HeaderBag: () => import_types.HeaderBag,
-  HostAddressType: () => HostAddressType,
-  HttpAuthDefinition: () => import_types.HttpAuthDefinition,
-  HttpAuthLocation: () => import_types.HttpAuthLocation,
-  HttpHandlerOptions: () => import_types.HttpHandlerOptions,
-  HttpMessage: () => import_types.HttpMessage,
-  HttpRequest: () => import_types.HttpRequest,
-  HttpResponse: () => import_types.HttpResponse,
-  Identity: () => import_types.Identity,
-  IniSection: () => import_types.IniSection,
-  InitializeHandler: () => import_types.InitializeHandler,
-  InitializeHandlerArguments: () => import_types.InitializeHandlerArguments,
-  InitializeHandlerOptions: () => import_types.InitializeHandlerOptions,
-  InitializeHandlerOutput: () => import_types.InitializeHandlerOutput,
-  InitializeMiddleware: () => import_types.InitializeMiddleware,
-  Int64: () => import_types.Int64,
-  IntegerHeaderValue: () => import_types.IntegerHeaderValue,
-  LongHeaderValue: () => import_types.LongHeaderValue,
-  MemoizedProvider: () => import_types.MemoizedProvider,
-  Message: () => import_types.Message,
-  MessageDecoder: () => import_types.MessageDecoder,
-  MessageEncoder: () => import_types.MessageEncoder,
-  MessageHeaderValue: () => import_types.MessageHeaderValue,
-  MessageHeaders: () => import_types.MessageHeaders,
-  MessageSigner: () => import_types.MessageSigner,
-  MetadataBearer: () => import_types.MetadataBearer,
-  MiddlewareStack: () => import_types.MiddlewareStack,
-  MiddlewareType: () => import_types.MiddlewareType,
-  PaginationConfiguration: () => import_types.PaginationConfiguration,
-  Paginator: () => import_types.Paginator,
-  ParsedIniData: () => import_types.ParsedIniData,
-  Pluggable: () => import_types.Pluggable,
-  Priority: () => import_types.Priority,
-  Profile: () => import_types.Profile,
-  Provider: () => import_types.Provider,
-  QueryParameterBag: () => import_types.QueryParameterBag,
-  RegionInfo: () => import_types.RegionInfo,
-  RegionInfoProvider: () => import_types.RegionInfoProvider,
-  RegionInfoProviderOptions: () => import_types.RegionInfoProviderOptions,
-  Relation: () => import_types.Relation,
-  RelativeLocation: () => import_types.RelativeLocation,
-  RelativeMiddlewareOptions: () => import_types.RelativeMiddlewareOptions,
-  RequestContext: () => import_types.RequestContext,
-  RequestHandler: () => import_types.RequestHandler,
-  RequestHandlerMetadata: () => import_types.RequestHandlerMetadata,
-  RequestHandlerOutput: () => import_types.RequestHandlerOutput,
-  RequestHandlerProtocol: () => import_types.RequestHandlerProtocol,
-  RequestPresigner: () => import_types.RequestPresigner,
-  RequestPresigningArguments: () => import_types.RequestPresigningArguments,
-  RequestSerializer: () => import_types.RequestSerializer,
-  RequestSigner: () => import_types.RequestSigner,
-  RequestSigningArguments: () => import_types.RequestSigningArguments,
-  ResponseDeserializer: () => import_types.ResponseDeserializer,
-  ResponseMetadata: () => import_types.ResponseMetadata,
-  RetryBackoffStrategy: () => import_types.RetryBackoffStrategy,
-  RetryErrorInfo: () => import_types.RetryErrorInfo,
-  RetryErrorType: () => import_types.RetryErrorType,
-  RetryStrategy: () => import_types.RetryStrategy,
-  RetryStrategyOptions: () => import_types.RetryStrategyOptions,
-  RetryStrategyV2: () => import_types.RetryStrategyV2,
-  RetryToken: () => import_types.RetryToken,
-  RetryableTrait: () => import_types.RetryableTrait,
-  SdkError: () => import_types.SdkError,
-  SdkStream: () => import_types.SdkStream,
-  SdkStreamMixin: () => import_types.SdkStreamMixin,
-  SdkStreamMixinInjector: () => import_types.SdkStreamMixinInjector,
-  SdkStreamSerdeContext: () => import_types.SdkStreamSerdeContext,
-  SerdeContext: () => import_types.SerdeContext,
-  SerializeHandler: () => import_types.SerializeHandler,
-  SerializeHandlerArguments: () => import_types.SerializeHandlerArguments,
-  SerializeHandlerOptions: () => import_types.SerializeHandlerOptions,
-  SerializeHandlerOutput: () => import_types.SerializeHandlerOutput,
-  SerializeMiddleware: () => import_types.SerializeMiddleware,
-  SharedConfigFiles: () => import_types.SharedConfigFiles,
-  ShortHeaderValue: () => import_types.ShortHeaderValue,
-  SignableMessage: () => import_types.SignableMessage,
-  SignedMessage: () => import_types.SignedMessage,
-  SigningArguments: () => import_types.SigningArguments,
-  SmithyException: () => import_types.SmithyException,
-  SourceData: () => import_types.SourceData,
-  StandardRetryBackoffStrategy: () => import_types.StandardRetryBackoffStrategy,
-  StandardRetryToken: () => import_types.StandardRetryToken,
-  Step: () => import_types.Step,
-  StreamCollector: () => import_types.StreamCollector,
-  StreamHasher: () => import_types.StreamHasher,
-  StringHeaderValue: () => import_types.StringHeaderValue,
-  StringSigner: () => import_types.StringSigner,
-  Terminalware: () => import_types.Terminalware,
-  TimestampHeaderValue: () => import_types.TimestampHeaderValue,
-  TokenIdentity: () => import_types.TokenIdentity,
-  TokenIdentityProvider: () => import_types.TokenIdentityProvider,
-  URI: () => import_types.URI,
-  UrlParser: () => import_types.UrlParser,
-  UserAgent: () => import_types.UserAgent,
-  UserAgentPair: () => import_types.UserAgentPair,
-  UuidHeaderValue: () => import_types.UuidHeaderValue,
-  WaiterConfiguration: () => import_types.WaiterConfiguration,
-  WithSdkStreamMixin: () => import_types.WithSdkStreamMixin,
-  randomValues: () => import_types.randomValues
+  AlgorithmId: () => AlgorithmId,
+  EndpointURLScheme: () => EndpointURLScheme,
+  FieldPosition: () => FieldPosition,
+  HttpApiKeyAuthLocation: () => HttpApiKeyAuthLocation,
+  HttpAuthLocation: () => HttpAuthLocation,
+  IniSectionType: () => IniSectionType,
+  RequestHandlerProtocol: () => RequestHandlerProtocol,
+  SMITHY_CONTEXT_KEY: () => SMITHY_CONTEXT_KEY,
+  getDefaultClientConfiguration: () => getDefaultClientConfiguration,
+  resolveDefaultRuntimeConfig: () => resolveDefaultRuntimeConfig
 });
 module.exports = __toCommonJS(src_exports);
 
-// src/abort.ts
-var import_types = require("@smithy/types");
+// src/auth/auth.ts
+var HttpAuthLocation = /* @__PURE__ */ ((HttpAuthLocation2) => {
+  HttpAuthLocation2["HEADER"] = "header";
+  HttpAuthLocation2["QUERY"] = "query";
+  return HttpAuthLocation2;
+})(HttpAuthLocation || {});
 
-// src/auth.ts
-
-
-// src/blob/blob-types.ts
-
-
-// src/checksum.ts
-
-
-// src/client.ts
-
-
-// src/command.ts
-
-
-// src/connection.ts
-
-
-// src/crypto.ts
-
-
-// src/dns.ts
-var HostAddressType = /* @__PURE__ */ ((HostAddressType2) => {
-  HostAddressType2["AAAA"] = "AAAA";
-  HostAddressType2["A"] = "A";
-  return HostAddressType2;
-})(HostAddressType || {});
-
-// src/encode.ts
-
+// src/auth/HttpApiKeyAuth.ts
+var HttpApiKeyAuthLocation = /* @__PURE__ */ ((HttpApiKeyAuthLocation2) => {
+  HttpApiKeyAuthLocation2["HEADER"] = "header";
+  HttpApiKeyAuthLocation2["QUERY"] = "query";
+  return HttpApiKeyAuthLocation2;
+})(HttpApiKeyAuthLocation || {});
 
 // src/endpoint.ts
+var EndpointURLScheme = /* @__PURE__ */ ((EndpointURLScheme2) => {
+  EndpointURLScheme2["HTTP"] = "http";
+  EndpointURLScheme2["HTTPS"] = "https";
+  return EndpointURLScheme2;
+})(EndpointURLScheme || {});
 
+// src/extensions/checksum.ts
+var AlgorithmId = /* @__PURE__ */ ((AlgorithmId2) => {
+  AlgorithmId2["MD5"] = "md5";
+  AlgorithmId2["CRC32"] = "crc32";
+  AlgorithmId2["CRC32C"] = "crc32c";
+  AlgorithmId2["SHA1"] = "sha1";
+  AlgorithmId2["SHA256"] = "sha256";
+  return AlgorithmId2;
+})(AlgorithmId || {});
+var getChecksumConfiguration = /* @__PURE__ */ __name((runtimeConfig) => {
+  const checksumAlgorithms = [];
+  if (runtimeConfig.sha256 !== void 0) {
+    checksumAlgorithms.push({
+      algorithmId: () => "sha256" /* SHA256 */,
+      checksumConstructor: () => runtimeConfig.sha256
+    });
+  }
+  if (runtimeConfig.md5 != void 0) {
+    checksumAlgorithms.push({
+      algorithmId: () => "md5" /* MD5 */,
+      checksumConstructor: () => runtimeConfig.md5
+    });
+  }
+  return {
+    _checksumAlgorithms: checksumAlgorithms,
+    addChecksumAlgorithm(algo) {
+      this._checksumAlgorithms.push(algo);
+    },
+    checksumAlgorithms() {
+      return this._checksumAlgorithms;
+    }
+  };
+}, "getChecksumConfiguration");
+var resolveChecksumRuntimeConfig = /* @__PURE__ */ __name((clientConfig) => {
+  const runtimeConfig = {};
+  clientConfig.checksumAlgorithms().forEach((checksumAlgorithm) => {
+    runtimeConfig[checksumAlgorithm.algorithmId()] = checksumAlgorithm.checksumConstructor();
+  });
+  return runtimeConfig;
+}, "resolveChecksumRuntimeConfig");
 
-// src/eventStream.ts
-
+// src/extensions/defaultClientConfiguration.ts
+var getDefaultClientConfiguration = /* @__PURE__ */ __name((runtimeConfig) => {
+  return {
+    ...getChecksumConfiguration(runtimeConfig)
+  };
+}, "getDefaultClientConfiguration");
+var resolveDefaultRuntimeConfig = /* @__PURE__ */ __name((config) => {
+  return {
+    ...resolveChecksumRuntimeConfig(config)
+  };
+}, "resolveDefaultRuntimeConfig");
 
 // src/http.ts
-
-
-// src/identity/AwsCredentialIdentity.ts
-
-
-// src/identity/Identity.ts
-
-
-// src/identity/TokenIdentity.ts
-
+var FieldPosition = /* @__PURE__ */ ((FieldPosition2) => {
+  FieldPosition2[FieldPosition2["HEADER"] = 0] = "HEADER";
+  FieldPosition2[FieldPosition2["TRAILER"] = 1] = "TRAILER";
+  return FieldPosition2;
+})(FieldPosition || {});
 
 // src/middleware.ts
-
-
-// src/pagination.ts
-
+var SMITHY_CONTEXT_KEY = "__smithy_context";
 
 // src/profile.ts
-
-
-// src/response.ts
-
-
-// src/retry.ts
-
-
-// src/serde.ts
-
-
-// src/shapes.ts
-
-
-// src/signature.ts
-
-
-// src/stream.ts
-
+var IniSectionType = /* @__PURE__ */ ((IniSectionType2) => {
+  IniSectionType2["PROFILE"] = "profile";
+  IniSectionType2["SSO_SESSION"] = "sso-session";
+  IniSectionType2["SERVICES"] = "services";
+  return IniSectionType2;
+})(IniSectionType || {});
 
 // src/transfer.ts
-
-
-// src/uri.ts
-
-
-// src/util.ts
-
-
-// src/waiter.ts
-
+var RequestHandlerProtocol = /* @__PURE__ */ ((RequestHandlerProtocol2) => {
+  RequestHandlerProtocol2["HTTP_0_9"] = "http/0.9";
+  RequestHandlerProtocol2["HTTP_1_0"] = "http/1.0";
+  RequestHandlerProtocol2["TDS_8_0"] = "tds/8.0";
+  return RequestHandlerProtocol2;
+})(RequestHandlerProtocol || {});
 // Annotate the CommonJS export names for ESM import in node:
 
 0 && (module.exports = {
   HttpAuthLocation,
-  HostAddressType,
+  HttpApiKeyAuthLocation,
   EndpointURLScheme,
+  AlgorithmId,
+  getDefaultClientConfiguration,
+  resolveDefaultRuntimeConfig,
+  FieldPosition,
+  SMITHY_CONTEXT_KEY,
+  IniSectionType,
   RequestHandlerProtocol
 });
 
